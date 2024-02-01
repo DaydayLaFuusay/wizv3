@@ -1,0 +1,163 @@
+<head><link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'><meta content='width=device-width, initial-scale=1' name='viewport' /><script src='https://code.jquery.com/jquery-1.11.3.min.js'></script><script>$(function(){$('#includeHtml').load('nav_footer.html');});</script><link rel='stylesheet' href='styles3.css'><link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'></head><body onload='Func().then(() => NextQuestion(0))'><div class='part_header'><div class='part_header_row_1'><div class='part_header_title'>Responding to Cybersecurity Threats in Project Dependent Management</div></div><div class='part_header_row_2'><div class='part_header_author'><strong>Nick Becker</strong></div><div class='part_header_part'>LESSON 4 OF 14</div></div></div><div class='title_sentence'><h2><b>You've been exploited. Now What?</b></h2><p>Understanding the steps to take when a cybersecurity threat is encountered in project-dependent management.</p></div>
+    <div class="container">
+        <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-1"><input type="radio" name="slides" id="slide-2"><input type="radio" name="slides" id="slide-3"><input type="radio" name="slides" id="slide-4"><input type="radio" name="slides" id="slide-5"><input type="radio" name="slides" id="slide-6"><input type="radio" name="slides" id="slide-7"><ul class="carousel__slides"><li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="images/Identify the threat and its source.jpg" alt="">
+                        </div>
+                        <figcaption>
+                            Identify the threat and its source                           
+                        </figcaption>
+                    </figure>
+                </li><li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="images/Assess the impact on the project.jpg" alt="">
+                        </div>
+                        <figcaption>
+                            Assess the impact on the project                           
+                        </figcaption>
+                    </figure>
+                </li><li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="images/Involve the cybersecurity team immediately.jpg" alt="">
+                        </div>
+                        <figcaption>
+                            Involve the cybersecurity team immediately                           
+                        </figcaption>
+                    </figure>
+                </li><li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="images/Isolate affected systems to prevent further damage.jpg" alt="">
+                        </div>
+                        <figcaption>
+                            Isolate affected systems to prevent further damage                           
+                        </figcaption>
+                    </figure>
+                </li><li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="images/Implement remediation measures based on the nature.jpg" alt="">
+                        </div>
+                        <figcaption>
+                            Implement remediation measures based on the nature of the threat                           
+                        </figcaption>
+                    </figure>
+                </li><li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="images/Document the incident and actions taken for future.jpg" alt="">
+                        </div>
+                        <figcaption>
+                            Document the incident and actions taken for future reference                           
+                        </figcaption>
+                    </figure>
+                </li><li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="images/Review the incident to improve cybersecurity measu.jpg" alt="">
+                        </div>
+                        <figcaption>
+                            Review the incident to improve cybersecurity measures                           
+                        </figcaption>
+                    </figure>
+                </li></ul><ul class="carousel__thumbnails"><li>
+                    <label for="slide-1"><img src="images/Identify the threat and its source.jpg" alt=""></label>
+                </li><li>
+                    <label for="slide-2"><img src="images/Assess the impact on the project.jpg" alt=""></label>
+                </li><li>
+                    <label for="slide-3"><img src="images/Involve the cybersecurity team immediately.jpg" alt=""></label>
+                </li><li>
+                    <label for="slide-4"><img src="images/Isolate affected systems to prevent further damage.jpg" alt=""></label>
+                </li><li>
+                    <label for="slide-5"><img src="images/Implement remediation measures based on the nature.jpg" alt=""></label>
+                </li><li>
+                    <label for="slide-6"><img src="images/Document the incident and actions taken for future.jpg" alt=""></label>
+                </li><li>
+                    <label for="slide-7"><img src="images/Review the incident to improve cybersecurity measu.jpg" alt=""></label>
+                </li></ul></div></div><div class='important' style='margin-left:0%;margin-right:0%;'><ul><li><span>1</span>Internal Cybersecurity Team</li><li><span>2</span>Project Management Office</li><li><span>3</span>IT Department</li><li><span>4</span>Legal Department (if necessary)</li></ul></div>
+    <main>
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
+    
+            <div class="modal-content-container">
+    
+                <h1>Congratulations, Quiz Completed.</h1>
+    
+                <div class="grade-details">
+                    <p>Attempts : 10</p>
+                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                    <p>Right Answers : <span id="right-answers"></span></p>
+                    <p>Grade : <span id="grade-percentage"></span>%</p>
+                    <p ><span id="remarks"></span></p>
+                </div>
+    
+                <div class="modal-button-container">
+                    <button onclick="closeScoreModal()">Continue</button>
+                </div>
+    
+            </div>
+        </div>
+    <!-- end of modal of quiz details-->
+    
+        <div class="game-quiz-container">
+    
+            <div class="game-details-container">
+                <h1>Score : <span id="player-score"></span> /  5 </h1>
+                <h1> Question : <span id="question-number"></span> / 5</h1>
+            </div>
+    
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
+            </div>
+    
+            <div class="game-options-container">
+    
+               <div class="modal-container" id="option-modal">
+    
+                    <div class="modal-content-container">
+                         <h1>Please Pick An Option</h1>
+    
+                         <div class="modal-button-container">
+                            <button onclick="closeOptionModal()">Continue</button>
+                        </div>
+    
+                    </div>
+    
+               </div>
+    
+                <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+    
+    
+                <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+    
+    
+                <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+    
+    
+                <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+    
+    
+            </div>
+    
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()">Next Question</button>
+            </div>
+    
+        </div>
+    </main><div class='next_step'>Can you spot the exploit? Continue to the next lesson to test your skills and apply what you've learned in a simulated environment.</div><div id='includeHtml'></div></body><script src='code.js'></script>

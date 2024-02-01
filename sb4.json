@@ -1,0 +1,26 @@
+[
+    {
+        "question": "Which of the following is a good practice in product development?",
+        "optionA": "Ignoring potential vulnerabilities until the product is launched",
+        "optionB": "Implementing secure coding practices",
+        "optionC": "Not using any cybersecurity tools",
+        "optionD": "Leaving the security aspects to the end of the product development phase",
+        "correctOption": "optionB"
+    },
+    {
+        "question": "Which of the following attacks could compromise the database of the product?",
+        "optionA": "DDoS attack",
+        "optionB": "XSS attack",
+        "optionC": "SQL injection attack",
+        "optionD": "Phishing attack",
+        "correctOption": "optionC"
+    },
+    {
+        "question": "Why is it important to avoid cyber threats during the product development phase?",
+        "optionA": "It is not important",
+        "optionB": "To save time and resources",
+        "optionC": "To protect the integrity of the product",
+        "optionD": "Both B and C",
+        "correctOption": "optionD"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "question": "Which of the following is a proactive measure against cyber threats?",
+        "optionA": "Updating systems regularly",
+        "optionB": "Waiting for an attack to happen",
+        "optionC": "Ignoring suspicious emails",
+        "optionD": "Sharing passwords with team members",
+        "correctOption": "optionA"
+    },
+    {
+        "question": "What is the first step in responding to a ransomware attack?",
+        "optionA": "Paying the ransom",
+        "optionB": "Isolating the infected systems",
+        "optionC": "Deleting all files",
+        "optionD": "Ignoring the attack",
+        "correctOption": "optionB"
+    },
+    {
+        "question": "Why is it important to educate your team about cyber threats?",
+        "optionA": "It is not important",
+        "optionB": "So they can ignore the threats",
+        "optionC": "To help them identify and avoid potential threats",
+        "optionD": "To scare them",
+        "correctOption": "optionC"
+    }
+]

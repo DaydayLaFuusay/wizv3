@@ -1,0 +1,108 @@
+<head><meta content='width=device-width, initial-scale=1' name='viewport' /><script src='https://code.jquery.com/jquery-1.11.3.min.js'></script><script>$(function(){$('#includeHtml').load('nav_footer.html');});</script><link rel='stylesheet' href='styles3.css'><link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'></head><body onload='Func().then(() => NextQuestion(0))'><div class='part_header'><div class='part_header_row_1'><div class='part_header_title'>Introduction to ISO/SAE 21434:2021</div></div><div class='part_header_row_2'><div class='part_header_author'><strong>Nick Becker</strong></div><div class='part_header_part'>LESSON 1 OF 14</div></div></div><div class='wide_image'><img style='width:100%' src='images/A graphic representation of the ISOSAE 214342021.jpg'></div><div class='title_sentence'><h2><b>A Few Words About This Topic</b></h2><p>Imagine driving a car that's as smart as your smartphone, with the ability to connect and communicate with the world around it. Now, imagine the potential cybersecurity threats that come with it. This is where ISO/SAE 21434:2021 comes into play, a standard designed to safeguard the future of automotive industry.</p></div><div class='title_sentence'><h2><b>The Unique Aspects of This Training</b></h2><p>This training is not just about understanding a standard, it's about equipping IoT developers with the knowledge to implement and maintain cybersecurity measures in the automotive industry. It emphasizes on the human factors in cybersecurity management, involving expertise in areas such as threat analysis, risk management, and incident response.</p></div><div class='important' style='margin-left:0%;margin-right:0%;'><ul><li><span>1</span> According to Statista, the automotive IoT market is expected to reach $83 billion by 2022.</li><li><span>2</span> As per a report by Upstream Security, automotive cybersecurity incidents have increased by 605% since 2016.</li><li><span>3</span> A study by Ponemon Institute reveals that 62% of automotive companies believe they would not be able to respond to a cyberattack.</li></ul></div><div class='quote'><div class='quote_img'><img style='width:100%' src='images/If cars are the body cybersecurity is the immune .jpg'></div><div class='quote_text'>'If cars are the body, cybersecurity is the immune system. And we all know what happens when the immune system fails. - Albert Einstein (not really)'</div></div><div class='title_sentence'><h2><b>The Escalating Risks</b></h2><p>As the automotive industry accelerates towards a future driven by IoT, the risks associated with cybersecurity are escalating at an alarming rate. The threats are evolving, progressing from mere data theft to potential life-threatening situations. Companies neglecting proper risk management could face severe consequences, from financial losses to reputational damage.</p></div><div class='next_step'>Now that we understand the significance of this topic, let's dive into the training and learn how to implement and maintain cybersecurity measures in accordance with ISO/SAE 21434:2021.</div><div class='two_lists'><h2><b>The Good Guys and The Bad Guys</b></h2><h3><b>The Heroes:</b></h3><div class='important' style='margin-left:0%;margin-right:0%;width:100%;'><ul><li><span>1</span> IoT Developers: They are responsible for designing and developing secure IoT solutions in the automotive industry.</li><li><span>2</span> Cybersecurity Analysts: They identify and mitigate potential threats, ensuring the security of IoT systems.</li><li><span>3</span> Risk Managers: They assess and manage the risks associated with IoT in the automotive industry.</li></ul></div><h3><b>The villains:</b></h3><div class='important' style='margin-left:0%;margin-right:0%;width:100%;'><ul><li><span>1</span> Hackers: They exploit vulnerabilities in IoT systems to gain unauthorized access.</li><li><span>2</span> Cyber Criminals: They engage in illegal activities such as data theft and ransomware attacks.</li><li><span>3</span> Insider Threats: They pose a risk as they have legitimate access to systems and can cause damage intentionally or unintentionally.</li></ul></div><div class='note'>This is not an exhaustive list but a detail of the most notorious actors that are the usual suspects.</div></div><div class='title_sentence'><h2><b>What Failure Looks Like</b></h2><p>Failing to address the cybersecurity measures in automotive IoT can have serious consequences.</p></div><div class='important' style='margin-left:25%;margin-right:25%;'><ul><li><span>1</span> Unauthorized Access: Hackers can gain control of the vehicle's system, posing a threat to passenger safety.</li><li><span>2</span> Data Theft: Personal data of the vehicle's owner can be stolen and misused.</li><li><span>3</span> Financial Loss: Companies can face significant financial losses due to cyberattacks.</li></ul></div><div class='quote'><div class='quote_img'><img style='width:100%' src='images/The automotive industry needs to have cybersecuri.jpg'></div><div class='quote_text'>''The automotive industry needs to have cybersecurity measures in place as the consequences of a breach can be life-threatening.' - Mary Barra, CEO of General Motors'</div></div>
+    <main>
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
+    
+            <div class="modal-content-container">
+    
+                <h1>Congratulations, Quiz Completed.</h1>
+    
+                <div class="grade-details">
+                    <p>Attempts : 10</p>
+                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                    <p>Right Answers : <span id="right-answers"></span></p>
+                    <p>Grade : <span id="grade-percentage"></span>%</p>
+                    <p ><span id="remarks"></span></p>
+                </div>
+    
+                <div class="modal-button-container">
+                    <button onclick="closeScoreModal()">Continue</button>
+                </div>
+    
+            </div>
+        </div>
+    <!-- end of modal of quiz details-->
+    
+        <div class="game-quiz-container">
+    
+            <div class="game-details-container">
+                <h1>Score : <span id="player-score"></span> /  4 </h1>
+                <h1> Question : <span id="question-number"></span> / 4</h1>
+            </div>
+    
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
+            </div>
+    
+            <div class="game-options-container">
+    
+               <div class="modal-container" id="option-modal">
+    
+                    <div class="modal-content-container">
+                         <h1>Please Pick An Option</h1>
+    
+                         <div class="modal-button-container">
+                            <button onclick="closeOptionModal()">Continue</button>
+                        </div>
+    
+                    </div>
+    
+               </div>
+    
+                <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+    
+    
+                <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+    
+    
+                <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+    
+    
+                <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+    
+    
+            </div>
+    
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()">Next Question</button>
+            </div>
+    
+        </div>
+    </main>
+    <div class="container">
+        <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-1"><input type="radio" name="slides" id="slide-2"><ul class="carousel__slides"><li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="images/In 2015 Fiat Chrysler had to recall 1.4 million v.jpg" alt="">
+                        </div>
+                        <figcaption>
+                            In 2015, Fiat Chrysler had to recall 1.4 million vehicles in the US after security researchers were able to take control of a Jeep's digital systems. This incident highlighted the importance of implementing robust cybersecurity measures in the automotive industry.                           
+                        </figcaption>
+                    </figure>
+                </li><li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="images/In 2018 a Tesla Model S was remotely hacked by a .jpg" alt="">
+                        </div>
+                        <figcaption>
+                            In 2018, a Tesla Model S was remotely hacked by a team of researchers from Keen Security Lab. They were able to control the car's brakes, demonstrating the potential risks associated with automotive IoT.                           
+                        </figcaption>
+                    </figure>
+                </li></ul><ul class="carousel__thumbnails"><li>
+                    <label for="slide-1"><img src="images/In 2015 Fiat Chrysler had to recall 1.4 million v.jpg" alt=""></label>
+                </li><li>
+                    <label for="slide-2"><img src="images/In 2018 a Tesla Model S was remotely hacked by a .jpg" alt=""></label>
+                </li></ul></div></div><div id='includeHtml'></div></body><script src='code.js'></script>

@@ -1,0 +1,34 @@
+[
+    {
+        "question": "What is the main purpose of ISO/SAE 21434:2021?",
+        "optionA": "To regulate the speed of vehicles",
+        "optionB": "To implement cybersecurity measures in automotive IoT",
+        "optionC": "To design new car models",
+        "optionD": "To make cars fly",
+        "correctOption": "optionB"
+    },
+    {
+        "question": "Who is responsible for designing secure IoT solutions?",
+        "optionA": "Hackers",
+        "optionB": "Risk Managers",
+        "optionC": "IoT Developers",
+        "optionD": "Car Mechanics",
+        "correctOption": "optionC"
+    },
+    {
+        "question": "What can be a consequence of failing to address cybersecurity in automotive IoT?",
+        "optionA": "Cars will start talking",
+        "optionB": "Unauthorized access",
+        "optionC": "Increase in fuel consumption",
+        "optionD": "Change in car color",
+        "correctOption": "optionB"
+    },
+    {
+        "question": "Who said 'The automotive industry needs to have cybersecurity measures in place as the consequences of a breach can be life-threatening.'?",
+        "optionA": "Albert Einstein",
+        "optionB": "Mary Barra",
+        "optionC": "Elon Musk",
+        "optionD": "Tom Cruise",
+        "correctOption": "optionB"
+    }
+]

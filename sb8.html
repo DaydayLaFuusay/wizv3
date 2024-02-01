@@ -1,0 +1,151 @@
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <script src='https://code.jquery.com/jquery-1.11.3.min.js'></script>
+    <script>$(function(){$('#includeHtml').load('nav_footer.html');});</script>
+    <link rel='stylesheet' href='styles3.css'>
+    <link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>
+</head>
+<body onload='Func().then(() => NextQuestion(0))'>
+<div class='part_header'>
+    <div class='part_header_row_1'>
+        <div class='part_header_title'>Avoid: Steps to Protect Yourself from Threats and Risks in Automotive
+            Cybersecurity
+        </div>
+    </div>
+    <div class='part_header_row_2'>
+        <div class='part_header_author'><strong>Nick Becker</strong></div>
+        <div class='part_header_part'>LESSON 9 OF 14</div>
+    </div>
+</div>
+<div class='container_wide_quote'><img style='width:100%'
+                                       src='images/�The complexity of the automotive ecosystem combi.jpg'>
+    <div class='wide_quote'>�The complexity of the automotive ecosystem, combined with the criticality of the safety
+        functions provided by modern vehicles, makes the task of securing these systems a formidable challenge.� - **Dr.
+        Sandeep Neema, Research Scientist, Vanderbilt University**
+    </div>
+</div>
+<div class='title_sentence'><h2><b>Leveraging Tools for Threat and Risk Analysis</b></h2>
+    <p>Utilizing advanced threat and risk analysis tools can significantly enhance your ability to stay ahead of
+        potential cybersecurity threats. These tools can provide real-time monitoring, threat intelligence, and
+        predictive analytics to identify potential vulnerabilities and threats before they can be exploited.</p></div>
+<div class="importance_to_avoid">
+    <caption>Why it is Better to Avoid than Remediate</caption>
+    <div class='importance_to_avoid_intro'>Avoiding cybersecurity threats is always preferable to remediating them. The
+        process of remediation can be time-consuming, costly, and potentially damaging to the reputation of the
+        organization.
+    </div>
+    <table class="responsive-table">
+        <tr>
+            <th>Example of attack</th>
+            <th>Average time to remediate</th>
+        </tr>
+        <tr>
+            <td>For instance, a successful phishing attack could lead to unauthorized access to sensitive data. The
+                remediation process would involve identifying the breach, isolating affected systems, eradicating the
+                threat, and restoring systems and data.
+            </td>
+            <td>This could take weeks or even months to fully resolve.</td>
+        <tr>
+            <td>In another scenario, a malware attack could disrupt critical systems. Remediation would require system
+                downtime, malware removal, system restoration, and potential data loss.
+            </td>
+            <td>This could take anywhere from a few days to several weeks.</td>
+        <tr>
+            <td>A DDoS attack could render systems inoperable. Remediation would involve identifying the source of the
+                attack, mitigating the attack, and restoring services.
+            </td>
+            <td>This could take hours or days, depending on the severity of the attack.</td>
+    </table>
+    <div class='importance_to_avoid_intro'>Given these scenarios, it is clear that prevention is always better than
+        remediation when it comes to cybersecurity.
+    </div>
+</div>
+<main>
+    <!-- creating a modal for when quiz ends -->
+    <div class="modal-container" id="score-modal">
+
+        <div class="modal-content-container">
+
+            <h1>Congratulations, Quiz Completed.</h1>
+
+            <div class="grade-details">
+                <p>Attempts : 10</p>
+                <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                <p>Right Answers : <span id="right-answers"></span></p>
+                <p>Grade : <span id="grade-percentage"></span>%</p>
+                <p><span id="remarks"></span></p>
+            </div>
+
+            <div class="modal-button-container">
+                <button onclick="closeScoreModal()">Continue</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- end of modal of quiz details-->
+
+    <div class="game-quiz-container">
+
+        <div class="game-details-container">
+            <h1>Score : <span id="player-score"></span> / 3 </h1>
+            <h1> Question : <span id="question-number"></span> / 3</h1>
+        </div>
+
+        <div class="game-question-container">
+            <h1 id="display-question"></h1>
+        </div>
+
+        <div class="game-options-container">
+
+            <div class="modal-container" id="option-modal">
+
+                <div class="modal-content-container">
+                    <h1>Please Pick An Option</h1>
+
+                    <div class="modal-button-container">
+                        <button onclick="closeOptionModal()">Continue</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA"/>
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+
+
+            <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB"/>
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+
+
+            <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC"/>
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+
+
+            <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD"/>
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+
+
+        </div>
+
+        <div class="next-button-container">
+            <button onclick="handleNextQuestion()">Next Question</button>
+        </div>
+
+    </div>
+</main>
+<div class='next_step'>Remember, anyone can be exploited. In the next lesson, you will learn how to respond to an
+    exploit.
+</div>
+<div id='includeHtml'></div>
+</body>
+<script src='code.js'></script>

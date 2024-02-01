@@ -1,0 +1,42 @@
+[
+    {
+        "question": "What is the first step in responding to a cybersecurity incident?",
+        "optionA": "Eradicate the threat",
+        "optionB": "Identify the incident",
+        "optionC": "Recover",
+        "optionD": "Learn from the incident",
+        "correctOption": "optionB"
+    },
+    {
+        "question": "Who should you report a cybersecurity incident to?",
+        "optionA": "Your friends",
+        "optionB": "The media",
+        "optionC": "Internal IT Support and Cybersecurity Team",
+        "optionD": "Nobody",
+        "correctOption": "optionC"
+    },
+    {
+        "question": "What is the purpose of containing a cybersecurity incident?",
+        "optionA": "To prevent further damage",
+        "optionB": "To identify the cause of the breach",
+        "optionC": "To restore the affected systems",
+        "optionD": "To learn from the incident",
+        "correctOption": "optionA"
+    },
+    {
+        "question": "What should you do after recovering from a cybersecurity incident?",
+        "optionA": "Ignore it",
+        "optionB": "Learn from the incident and implement preventive measures",
+        "optionC": "Eradicate the threat",
+        "optionD": "Identify the incident",
+        "correctOption": "optionB"
+    },
+    {
+        "question": "What is the role of ISO/SAE 21434:2021 in managing cybersecurity risks?",
+        "optionA": "It provides guidelines for responding to cybersecurity incidents",
+        "optionB": "It is irrelevant",
+        "optionC": "It is a tool for hacking",
+        "optionD": "It is a cybersecurity threat",
+        "correctOption": "optionA"
+    }
+]

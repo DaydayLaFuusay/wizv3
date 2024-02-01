@@ -1,0 +1,141 @@
+<head><link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'><meta content='width=device-width, initial-scale=1' name='viewport' /><script src='https://code.jquery.com/jquery-1.11.3.min.js'></script><script>$(function(){$('#includeHtml').load('nav_footer.html');});</script><link rel='stylesheet' href='styles3.css'><link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'></head><body onload='Func().then(() => NextQuestion(0))'><div class='part_header'><div class='part_header_row_1'><div class='part_header_title'>Responding to Cybersecurity Incidents in the Automotive Industry</div></div><div class='part_header_row_2'><div class='part_header_author'><strong>Nick Becker</strong></div><div class='part_header_part'>LESSON 13 OF 14</div></div></div><div class='title_sentence'><h2><b>You've been exploited. Now What?</b></h2><p>In this section, we will guide you through the process of responding to cybersecurity incidents in the context of ISO/SAE 21434:2021.</p></div>
+    <div class="container">
+        <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-1"><input type="radio" name="slides" id="slide-2"><input type="radio" name="slides" id="slide-3"><input type="radio" name="slides" id="slide-4"><input type="radio" name="slides" id="slide-5"><ul class="carousel__slides"><li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="images/Identify the incident Recognize the signs of a se.jpg" alt="">
+                        </div>
+                        <figcaption>
+                            Identify the incident: Recognize the signs of a security breach and report it immediately.                           
+                        </figcaption>
+                    </figure>
+                </li><li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="images/Contain the incident Isolate the affected systems.jpg" alt="">
+                        </div>
+                        <figcaption>
+                            Contain the incident: Isolate the affected systems to prevent further damage.                           
+                        </figcaption>
+                    </figure>
+                </li><li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="images/Eradicate the threat Identify the cause of the br.jpg" alt="">
+                        </div>
+                        <figcaption>
+                            Eradicate the threat: Identify the cause of the breach and remove it.                           
+                        </figcaption>
+                    </figure>
+                </li><li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="images/Recover Restore the affected systems and verify t.jpg" alt="">
+                        </div>
+                        <figcaption>
+                            Recover: Restore the affected systems and verify their functionality.                           
+                        </figcaption>
+                    </figure>
+                </li><li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="images/Learn from the incident Analyze the incident and .jpg" alt="">
+                        </div>
+                        <figcaption>
+                            Learn from the incident: Analyze the incident and implement measures to prevent similar breaches in the future.                           
+                        </figcaption>
+                    </figure>
+                </li></ul><ul class="carousel__thumbnails"><li>
+                    <label for="slide-1"><img src="images/Identify the incident Recognize the signs of a se.jpg" alt=""></label>
+                </li><li>
+                    <label for="slide-2"><img src="images/Contain the incident Isolate the affected systems.jpg" alt=""></label>
+                </li><li>
+                    <label for="slide-3"><img src="images/Eradicate the threat Identify the cause of the br.jpg" alt=""></label>
+                </li><li>
+                    <label for="slide-4"><img src="images/Recover Restore the affected systems and verify t.jpg" alt=""></label>
+                </li><li>
+                    <label for="slide-5"><img src="images/Learn from the incident Analyze the incident and .jpg" alt=""></label>
+                </li></ul></div></div><div class='important' style='margin-left:0%;margin-right:0%;'><ul><li><span>1</span>Internal IT Support: Reach out to your IT department for immediate assistance.</li><li><span>2</span>Cybersecurity Team: Report the incident to your organization's cybersecurity team for further investigation.</li><li><span>3</span>ISO/SAE 21434:2021 Guidelines: Refer to the standard for guidance on managing cybersecurity risks.</li></ul></div>
+    <main>
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
+    
+            <div class="modal-content-container">
+    
+                <h1>Congratulations, Quiz Completed.</h1>
+    
+                <div class="grade-details">
+                    <p>Attempts : 10</p>
+                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                    <p>Right Answers : <span id="right-answers"></span></p>
+                    <p>Grade : <span id="grade-percentage"></span>%</p>
+                    <p ><span id="remarks"></span></p>
+                </div>
+    
+                <div class="modal-button-container">
+                    <button onclick="closeScoreModal()">Continue</button>
+                </div>
+    
+            </div>
+        </div>
+    <!-- end of modal of quiz details-->
+    
+        <div class="game-quiz-container">
+    
+            <div class="game-details-container">
+                <h1>Score : <span id="player-score"></span> /  5 </h1>
+                <h1> Question : <span id="question-number"></span> / 5</h1>
+            </div>
+    
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
+            </div>
+    
+            <div class="game-options-container">
+    
+               <div class="modal-container" id="option-modal">
+    
+                    <div class="modal-content-container">
+                         <h1>Please Pick An Option</h1>
+    
+                         <div class="modal-button-container">
+                            <button onclick="closeOptionModal()">Continue</button>
+                        </div>
+    
+                    </div>
+    
+               </div>
+    
+                <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+    
+    
+                <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+    
+    
+                <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+    
+    
+                <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+    
+    
+            </div>
+    
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()">Next Question</button>
+            </div>
+    
+        </div>
+    </main><div class='next_step'>Can you spot the exploit? Continue to the next lesson to test your skills and apply what you've learned in a simulated environment.</div><div id='includeHtml'></div></body><script src='code.js'></script>

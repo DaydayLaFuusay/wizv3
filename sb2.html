@@ -1,0 +1,149 @@
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <script src='https://code.jquery.com/jquery-1.11.3.min.js'></script>
+    <script>$(function(){$('#includeHtml').load('nav_footer.html');});</script>
+    <link rel='stylesheet' href='styles3.css'>
+    <link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>
+</head>
+<body onload='Func().then(() => NextQuestion(0))'>
+<div class='part_header'>
+    <div class='part_header_row_1'>
+        <div class='part_header_title'>Avoid: Steps to Protect Yourself from Cybersecurity Threats in Automotive
+            Industry as per ISO/SAE 21434:2021
+        </div>
+    </div>
+    <div class='part_header_row_2'>
+        <div class='part_header_author'><strong>Nick Becker</strong></div>
+        <div class='part_header_part'>LESSON 3 OF 14</div>
+    </div>
+</div>
+<div class='container_wide_quote'><img style='width:100%'
+                                       src='images/The complexity of cybersecurity in the automotiv.jpg'>
+    <div class='wide_quote'>*'The complexity of cybersecurity in the automotive industry is unprecedented. It's not just
+        about protecting data, but also ensuring the safety of the vehicle and its occupants.'* - **John Doe,
+        Cybersecurity Expert**
+    </div>
+</div>
+<div class='title_sentence'><h2><b>Leveraging Tools for Cybersecurity</b></h2>
+    <p>Utilizing advanced cybersecurity tools and adhering to the ISO/SAE 21434:2021 standard can significantly help in
+        staying ahead of potential threats. These tools can aid in identifying vulnerabilities, managing risks, and
+        implementing robust security measures in the automotive industry.</p></div>
+<div class="importance_to_avoid">
+    <caption>Why Prevention is Better than Remediation</caption>
+    <div class='importance_to_avoid_intro'>Preventing cybersecurity threats is far more efficient and cost-effective
+        than dealing with the aftermath of a security breach.
+    </div>
+    <table class="responsive-table">
+        <tr>
+            <th>Example of attack</th>
+            <th>Average time to remediate</th>
+        </tr>
+        <tr>
+            <td>In case of a data breach, the organization would have to identify the breach, stop the attack, assess
+                the damage, recover the lost data, and strengthen the security measures.
+            </td>
+            <td>This could take several weeks or even months.</td>
+        <tr>
+            <td>In case of a ransomware attack, the organization would have to isolate the affected systems, remove the
+                ransomware, restore the systems, and pay a hefty ransom.
+            </td>
+            <td>This could take several days to weeks.</td>
+        <tr>
+            <td>In case of a DDoS attack, the organization would have to identify the source of the attack, mitigate the
+                attack, recover the systems, and enhance the security measures.
+            </td>
+            <td>This could take several hours to days.</td>
+    </table>
+    <div class='importance_to_avoid_intro'>Preventing cybersecurity threats not only saves time and resources but also
+        protects the reputation of the organization.
+    </div>
+</div>
+<main>
+    <!-- creating a modal for when quiz ends -->
+    <div class="modal-container" id="score-modal">
+
+        <div class="modal-content-container">
+
+            <h1>Congratulations, Quiz Completed.</h1>
+
+            <div class="grade-details">
+                <p>Attempts : 10</p>
+                <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                <p>Right Answers : <span id="right-answers"></span></p>
+                <p>Grade : <span id="grade-percentage"></span>%</p>
+                <p><span id="remarks"></span></p>
+            </div>
+
+            <div class="modal-button-container">
+                <button onclick="closeScoreModal()">Continue</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- end of modal of quiz details-->
+
+    <div class="game-quiz-container">
+
+        <div class="game-details-container">
+            <h1>Score : <span id="player-score"></span> / 3 </h1>
+            <h1> Question : <span id="question-number"></span> / 3</h1>
+        </div>
+
+        <div class="game-question-container">
+            <h1 id="display-question"></h1>
+        </div>
+
+        <div class="game-options-container">
+
+            <div class="modal-container" id="option-modal">
+
+                <div class="modal-content-container">
+                    <h1>Please Pick An Option</h1>
+
+                    <div class="modal-button-container">
+                        <button onclick="closeOptionModal()">Continue</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA"/>
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+
+
+            <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB"/>
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+
+
+            <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC"/>
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+
+
+            <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD"/>
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+
+
+        </div>
+
+        <div class="next-button-container">
+            <button onclick="handleNextQuestion()">Next Question</button>
+        </div>
+
+    </div>
+</main>
+<div class='next_step'>Anyone can fall prey to cybersecurity threats. In the next lesson, you will learn how to
+    respond effectively to a cybersecurity exploit.
+</div>
+<div id='includeHtml'></div>
+</body>
+<script src='code.js'></script>

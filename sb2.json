@@ -1,0 +1,26 @@
+[
+    {
+        "question": "What is the first step in responding to a ransomware attack?",
+        "optionA": "Pay the ransom",
+        "optionB": "Identify the breach",
+        "optionC": "Restore systems",
+        "optionD": "Notify customers",
+        "correctOption": "optionB"
+    },
+    {
+        "question": "What is a key tool in preventing cybersecurity threats?",
+        "optionA": "Intrusion detection systems",
+        "optionB": "Public Wi-Fi",
+        "optionC": "Weak passwords",
+        "optionD": "Outdated software",
+        "correctOption": "optionA"
+    },
+    {
+        "question": "What is the main focus of ISO/SAE 21434:2021?",
+        "optionA": "Data privacy",
+        "optionB": "Cybersecurity in the automotive industry",
+        "optionC": "Software development",
+        "optionD": "Hardware design",
+        "correctOption": "optionB"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "question": "What is the first step in responding to a cybersecurity incident?",
+        "optionA": "Isolate affected systems",
+        "optionB": "Identify the breach",
+        "optionC": "Restore systems and data",
+        "optionD": "Eradicate the threat",
+        "correctOption": "optionB"
+    },
+    {
+        "question": "What is a key benefit of threat and risk analysis tools?",
+        "optionA": "They can predict the weather",
+        "optionB": "They provide real-time monitoring and threat intelligence",
+        "optionC": "They can replace the need for cybersecurity personnel",
+        "optionD": "They can fix all cybersecurity issues automatically",
+        "correctOption": "optionB"
+    },
+    {
+        "question": "Why is it better to avoid cybersecurity threats than to remediate them?",
+        "optionA": "Remediation is more fun",
+        "optionB": "Avoiding threats is too hard",
+        "optionC": "Remediation can be time-consuming, costly, and potentially damaging to the reputation of the organization",
+        "optionD": "There is no difference between avoiding and remediating threats",
+        "correctOption": "optionC"
+    }
+]
